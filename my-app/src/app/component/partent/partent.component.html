@@ -1,0 +1,10 @@
+<p (click)="click()">
+  <app-child #child></app-child>
+</p>
+
+<p>
+  请输入name:<input (input)="input('name')" [(ngModel)]="name"/>
+</p>
+<p>
+  请输入id:<input (input)="input('id')" [(ngModel)]="id"/>
+</p>

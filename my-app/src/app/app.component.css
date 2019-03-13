@@ -1,0 +1,19 @@
+.main {
+    width: 100%; 
+}
+
+.left {
+    position:absolute;
+    left:0px;
+    top:75px;
+    width: 30%;
+    height: 100%;
+    background: #c5c5c0
+}
+
+.right {
+    position:absolute;
+    left:30%;
+    top:75px;
+    width: 70%;
+}

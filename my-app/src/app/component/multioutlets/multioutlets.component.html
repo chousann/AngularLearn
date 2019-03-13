@@ -1,0 +1,11 @@
+<p><a [routerLink]="[{outlets:{let1:'let'}}]">left</a></p>
+<p><a [routerLink]="[{outlets:{let2:'let'}}]">right</a></p>
+<div class="main">
+  <h2>多个同级路由插座： </h2>
+  <div class="left">
+    <router-outlet name="let1"></router-outlet>
+  </div>
+  <div class="right">
+    <router-outlet name="let2"></router-outlet>
+  </div>
+</div>

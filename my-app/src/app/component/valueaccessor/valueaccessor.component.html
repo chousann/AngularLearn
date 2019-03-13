@@ -1,0 +1,9 @@
+<div>
+  <lib-mylib [formControl]="formGroup.controls['libinput']"></lib-mylib>
+  <p>formGroup.controls['libinput'].value: {{formGroup.controls['libinput'].value}}</p>
+  <p>
+    <span>TO lib-mylib</span>
+    <input (input)="input()" [formControl]="formGroup.controls['name']" />
+    <button (click)="click()">button</button>
+  </p>
+</div>
