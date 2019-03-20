@@ -7,11 +7,13 @@ import { HelloComponent } from './component/hello/hello.component';
 import { DynamicComponent } from './component/dynamic/dynamic.component';
 import { MultioutletsComponent } from './component/multioutlets/multioutlets.component';
 import { ChildrouterComponent } from './component/childrouter/childrouter.component';
+import { HttpComponent } from './component/http/http.component';
 
 const routes: Routes = [
   { path: '', component: HelloComponent },
   { path: 'valueaccessor', component: ValueaccessorComponent },
   { path: 'partent', component: PartentComponent },
+  { path: 'http', component: HttpComponent },
   { path: 'dynamic', component: DynamicComponent },
   {
     path: 'childrouter', component: ChildrouterComponent,

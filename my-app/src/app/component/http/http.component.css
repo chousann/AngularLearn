@@ -1,0 +1,21 @@
+.k-area {
+    background: #b9adad;
+}
+
+.list {
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    width: 50%;
+    height: 100%;
+    background: #b9adad;
+}
+
+.detail {
+    position:absolute;
+    left:50%;
+    top:100px;
+    width: 50%;
+    height: 100%;
+    background: #b9adad;
+}

@@ -1,0 +1,23 @@
+<div>
+  <button (click)="click()">send request</button>
+  <p>response: <span>{{response}}</span></p>
+</div>
+<div class="k-area">
+  <p>
+    <input (input)="input()" (compositionend)="input()" [(ngModel)]="cityCode" />
+    <button (click)="kclick()">跨域请求</button>
+  </p>
+  <div>
+    <div class="list">
+      <ul *ngFor="let item of cityList">
+        <li (click)="choose(item.cityCode)">{{item.cityName}}:{{item.cityCode}}</li>
+      </ul>
+    </div>
+    <div class="detail">
+      <p>city: {{kresponse.weatherinfo.city}}</p>
+      <p>temp: {{kresponse.weatherinfo.temp}}</p>
+      <p>WD: {{kresponse.weatherinfo.WD}}</p>
+      <p>WS: {{kresponse.weatherinfo.WS}}</p>
+    </div>
+  </div>
+</div>

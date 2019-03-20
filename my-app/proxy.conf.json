@@ -1,0 +1,12 @@
+{
+    "/data": {
+        "target": "http://www.weather.com.cn",
+        "secure": false,
+        "changeOrigin": true
+    },
+    "/search": {
+        "target": "http://toy1.weather.com.cn",
+        "secure": false,
+        "changeOrigin": true
+    }
+}
