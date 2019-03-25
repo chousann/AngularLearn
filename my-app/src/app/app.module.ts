@@ -16,6 +16,13 @@ import { ChildrouterComponent } from './component/childrouter/childrouter.compon
 import { HttpServiceImpl } from './service/httpimpl.sevice';
 import { HttpService } from './service/http.service';
 import { HttpComponent } from './component/http/http.component';
+import { LifecycleComponent } from './component/lifecycle/lifecycle/lifecycle.component';
+import { LifecyclepartentComponent } from './component/lifecycle/lifecyclepartent/lifecyclepartent.component';
+import { DiComponent } from './component/di/di.component';
+import { Di1Component } from './component/di/di1.component';
+import { Didto } from './dto/Didto.service';
+import { MetadataComponent } from './component/metadata/metadata/metadata.component';
+import { MetadataexampleComponent } from './component/metadata/metadataexample/metadataexample.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +34,13 @@ import { HttpComponent } from './component/http/http.component';
     DynamicComponent,
     MultioutletsComponent,
     ChildrouterComponent,
-    HttpComponent
+    HttpComponent,
+    LifecycleComponent,
+    LifecyclepartentComponent,
+    DiComponent,
+    Di1Component,
+    MetadataComponent,
+    MetadataexampleComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +51,7 @@ import { HttpComponent } from './component/http/http.component';
     HttpClientModule
   ],
   providers: [
+    //Didto,
     {provide: HttpService, useClass: HttpServiceImpl}
   ],
   bootstrap: [AppComponent]

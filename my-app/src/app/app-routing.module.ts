@@ -8,12 +8,20 @@ import { DynamicComponent } from './component/dynamic/dynamic.component';
 import { MultioutletsComponent } from './component/multioutlets/multioutlets.component';
 import { ChildrouterComponent } from './component/childrouter/childrouter.component';
 import { HttpComponent } from './component/http/http.component';
+import { LifecyclepartentComponent } from './component/lifecycle/lifecyclepartent/lifecyclepartent.component';
+import { DiComponent } from './component/di/di.component';
+import { Di1Component } from './component/di/di1.component';
+import { MetadataexampleComponent } from './component/metadata/metadataexample/metadataexample.component';
 
 const routes: Routes = [
   { path: '', component: HelloComponent },
   { path: 'valueaccessor', component: ValueaccessorComponent },
   { path: 'partent', component: PartentComponent },
+  { path: 'metadata', component: MetadataexampleComponent },
+  { path: 'lifecycle', component: LifecyclepartentComponent },
   { path: 'http', component: HttpComponent },
+  { path: 'di', component: DiComponent },
+  { path: 'di1', component: Di1Component },
   { path: 'dynamic', component: DynamicComponent },
   {
     path: 'childrouter', component: ChildrouterComponent,
