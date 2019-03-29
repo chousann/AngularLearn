@@ -12,11 +12,12 @@ import { LifecyclepartentComponent } from './component/lifecycle/lifecycleparten
 import { DiComponent } from './component/di/di.component';
 import { Di1Component } from './component/di/di1.component';
 import { MetadataexampleComponent } from './component/metadata/metadataexample/metadataexample.component';
-
+import { AnimationsComponent } from './component/animations/animations/animations.component';
 const routes: Routes = [
   { path: '', component: HelloComponent },
   { path: 'valueaccessor', component: ValueaccessorComponent },
   { path: 'partent', component: PartentComponent },
+  { path: 'animations', component: AnimationsComponent },
   { path: 'metadata', component: MetadataexampleComponent },
   { path: 'lifecycle', component: LifecyclepartentComponent },
   { path: 'http', component: HttpComponent },

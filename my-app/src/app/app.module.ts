@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
@@ -23,6 +24,7 @@ import { Di1Component } from './component/di/di1.component';
 import { Didto } from './dto/Didto.service';
 import { MetadataComponent } from './component/metadata/metadata/metadata.component';
 import { MetadataexampleComponent } from './component/metadata/metadataexample/metadataexample.component';
+import { AnimationsComponent } from './component/animations/animations/animations.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +43,7 @@ import { MetadataexampleComponent } from './component/metadata/metadataexample/m
     Di1Component,
     MetadataComponent,
     MetadataexampleComponent,
+    AnimationsComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import { MetadataexampleComponent } from './component/metadata/metadataexample/m
     ReactiveFormsModule,
     MylibModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [
     //Didto,
