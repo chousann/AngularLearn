@@ -32,4 +32,28 @@ export class HttpServiceImpl implements HttpService {
     url = '/search?cityname='+ cityName + '&_=' + this.num++;
     return this.httpClient.get(url, {responseType: 'text'});
   }
+
+  getProvienceList(): Observable<any> {
+    let url: string;
+    url = 'data/list3/city.xml';
+    return this.httpClient.get(url, {responseType: 'text'});
+  }
+
+  getCityList(provienceCode: string): Observable<any> {
+    let url: string;
+    url = 'data/list3/city' + provienceCode + '.xml';
+    return this.httpClient.get(url, {responseType: 'text'});
+  }
+
+  getCountryList(provienceCode: string): Observable<any> {
+    let url: string;
+    url = 'data/list3/city' + provienceCode + '.xml';
+    return this.httpClient.get(url, {responseType: 'text'});
+  }
+
+  getCityInfo(provienceCode: string): Observable<any> {
+    let url: string;
+    url = 'data/cityinfo/' + provienceCode + '.html';
+    return this.httpClient.get<any>(url);
+  }
 }

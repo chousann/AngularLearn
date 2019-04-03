@@ -1,15 +1,43 @@
-<div>
+<div class="uk-area">
   <button (click)="click()">send request</button>
   <p>response: <span>{{response}}</span></p>
 </div>
-<div class="k-area">
+
+<div class="k-area-select-block">
+  <div class="select-group">
+    <div class="left-select">
+      <p>provience choose</p>
+      <select [(ngModel)]="provienceSelect" (change)="chooseProvience()">
+        <option *ngFor="let item of provienceList" [value]="item.cityCode">{{item.cityName}}</option>
+      </select>
+    </div>
+    <div class="mid-select">
+      <p>city choose</p>
+      <select [(ngModel)]="citySelect" (change)="chooseCity()">
+        <option *ngFor="let item of cityList" [value]="item.cityCode">{{item.cityName}}</option>
+      </select>
+    </div>
+    <div class="right-select">
+      <p>country choose</p>
+      <select [(ngModel)]="countrySelect" (change)="chooseCountry()">
+        <option *ngFor="let item of countryList" [value]="item.cityCode">{{item.cityName}}</option>
+      </select>
+    </div>
+  </div>
+  <div>
+    <button (click)="search()">send</button>
+    <p><span>current city: {{currentCity.cityName}} --  {{cityInfo.weatherinfo.weather}}</span></p>
+  </div>
+</div>
+
+<div class="k-area-search-block">
   <p>
     <input (input)="input()" (compositionend)="input()" [(ngModel)]="cityCode" />
     <button (click)="kclick()">跨域请求</button>
   </p>
   <div>
     <div class="list">
-      <ul *ngFor="let item of cityList">
+      <ul *ngFor="let item of cityList1">
         <li (click)="choose(item.cityCode)">{{item.cityName}}:{{item.cityCode}}</li>
       </ul>
     </div>

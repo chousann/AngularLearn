@@ -1,11 +1,43 @@
-.k-area {
+.uk-area {
+    background: #f15555;
+}
+
+.k-area-select-block {
+    background: #fdfbfb;
+}
+
+.k-area-search-block {
+    position: absolute;
+    left: 0px;
+    top: 220px;
+    width: 100%;
+    height: 100%;
     background: #b9adad;
+}
+.select-group {
+    height: 80px;
+    width: 100%;
+    background: #fdfbfb;
+}
+.left-select {
+    position: absolute;
+    left: 0px;
+    width: 33.3%;
+}
+.mid-select {
+    position: absolute;
+    left: 33.3%;
+    width: 33.3%;
+}
+.right-select {
+    position: absolute;
+    left: 66.6%;
+    width: 33.3%;
 }
 
 .list {
     position: absolute;
     left: 0px;
-    top: 100px;
     width: 50%;
     height: 100%;
     background: #b9adad;
@@ -14,7 +46,6 @@
 .detail {
     position:absolute;
     left:50%;
-    top:100px;
     width: 50%;
     height: 100%;
     background: #b9adad;
