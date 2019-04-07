@@ -8,7 +8,8 @@
     "buildmylib": "ng build mylib",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "installgulptoolsetfromgithub": "npm install https://github.com/chousann/gulpToolSet.git"
   },
   "private": true,
   "dependencies": {

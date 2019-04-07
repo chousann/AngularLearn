@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-
+//import { PackageName, replace } from 'gulptoolset'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,6 +8,9 @@ import { Component, ViewChild } from '@angular/core';
 export class AppComponent {
   title = 'my-app';
 
-  constructor() { }
+  constructor() {
+    //PackageName();
+    //replace('123' , '456', '789');
+   }
 
 }
