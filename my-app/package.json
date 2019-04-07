@@ -9,6 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "installfromlocal": "npm install ../myclidemo",
     "installgulptoolsetfromgithub": "npm install https://github.com/chousann/gulpToolSet.git"
   },
   "private": true,
