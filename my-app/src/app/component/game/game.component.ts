@@ -9,14 +9,14 @@ export class GameComponent implements OnInit {
 
   private barrier: number = 3; // 关卡数
   private maxBarrier: number; // 最大关卡数，可以不设置
-  private field: Array<any> = []; // 田地格子
+  public field: Array<any> = []; // 田地格子
   private columnNum: number; // 田地的行数和列数
-  private time: any;
+  public time: any;
   private mole: any;
-  private score: any;
+  public score: any;
   private timeCounting: any;
   private disploayMoling: any;
-  private gameOver: any = { isOver: false, isPassAll: false };
+  public gameOver: any = { isOver: false, isPassAll: false };
 
   constructor() { }
 

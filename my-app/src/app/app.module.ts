@@ -25,6 +25,8 @@ import { Didto } from './dto/Didto.service';
 import { MetadataComponent } from './component/metadata/metadata/metadata.component';
 import { MetadataexampleComponent } from './component/metadata/metadataexample/metadataexample.component';
 import { AnimationsComponent } from './component/animations/animations/animations.component';
+import { ShareModule } from './share/share.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,11 +50,13 @@ import { AnimationsComponent } from './component/animations/animations/animation
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
     MylibModule,
-    FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ShareModule
+
+    //ReactiveFormsModule,
+    //FormsModule,
   ],
   providers: [
     //Didto,
